@@ -1,0 +1,29 @@
+{
+  "name": "tracker.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch src --ext ts,js --exec ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1",
+    "tracker.io": "file:",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^5.0.0"
+  }
+}
