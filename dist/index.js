@@ -26,6 +26,11 @@ io.on("connection", (socket) => {
     console.log("User connected");
     socket.on("disconnect", () => {
         console.log("User disconnected");
+        io.emit("user-disconnected", socket.id);
+    });
+    socket.on("sendLocation", (obj) => {
+        console.log(obj);
+        io.emit("receiveLocation", obj);
     });
 });
 server.listen(port, () => {
