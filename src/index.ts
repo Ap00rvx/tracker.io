@@ -31,6 +31,7 @@ io.on("connection", (socket) => {
         io.emit("user-disconnected",socket.id);
     });
     socket.on("sendLocation",(obj)=>{
+        obj.id=socket.id;
         console.log(obj);
         io.emit("receiveLocation",obj);
     
